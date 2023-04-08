@@ -8,7 +8,7 @@
     {
       "label": "NameSpace Id",
       "type": "text",
-      "icon": "fa-key",
+      "icon": "fa-id-card",
       "hoverText": "Enter the NameSpace Id if you have one or a new NameSpace Id will be generated for you to use"
     }
   ],
