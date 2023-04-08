@@ -3,6 +3,7 @@ import {Header} from "./Header";
 import {Field} from "./Field";
 import {ResultBox} from "./ResultBox";
 import {getColor} from "../helper/getColor";
+import './css/TextArea.css'
 
 export function ReturnApp(props) {
     const {load, config} = props;
@@ -28,6 +29,12 @@ export function ReturnApp(props) {
                                             hoverText={field.hoverText}
                                         />
                                     ))}
+                                    <textarea
+                                        id={"textarea-0"}
+                                        className="textarea"
+                                        placeholder={config.textArea.hoverText}
+                                    ></textarea>
+                                    <br/>
                                     <div id="my-button" className="control">
                                         <button
                                             id="button"
@@ -54,7 +61,7 @@ export function ReturnApp(props) {
                         suffix={box.suffix}
                         text={box.text}
                         color={getColor()}
-                        large={index < 2} // Pass 'large' prop as true for the first two boxes
+                        large={index === 1} // Pass 'large' prop as true for the first two boxes
                     />
                 ))}
             </div>

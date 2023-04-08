@@ -3,7 +3,7 @@ import './css/ResultBox.css';
 
 export function ResultBox({ id, suffix, text, color, large }) {
     const columnSize = large
-        ? "is-12-tablet is-6-desktop is-6-widescreen"
+        ? "is-12-tablet is-9-desktop is-9-widescreen"
         : "is-12-tablet is-3-desktop is-3-widescreen";
 
     return (
