@@ -1,6 +1,6 @@
 :root {
-    --button-text: 'Check Health';
-    --button-text-while-loading: "Checking";
+    --button-text: 'Submit PFB';
+    --button-text-while-loading: "Submitting Transaction";
 }
 
 form .button {
