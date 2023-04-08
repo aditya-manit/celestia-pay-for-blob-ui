@@ -56,7 +56,7 @@ form .button.loading:before {
     height: 100%;
     background-color: green;
     transform: translateX(-100%);
-    animation: progress 2s linear forwards;
+    animation: progress 4s linear forwards;
 }
 
 @keyframes progress {

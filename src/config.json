@@ -1,5 +1,5 @@
 {
-  "appTitle": "Celestia Submit Pay For Blob Tx",
+  "appTitle": "Celestia Submit Pay For Blob Transaction",
   "backend": {
     "apiFailureMessage": "Unable to submit, try again after some time"
   },
