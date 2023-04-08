@@ -5,7 +5,6 @@ async function processData(data) {
 }
 
 export async function getNameSpaceSharesAtHeight(namespaceId, height) {
-    const requestData = {}
-    const data = await CallRpcWithPayload(requestData, "dummy_token", `namespaced_shares/${namespaceId}/height/${height}`, "GET")
+    const data = await CallRpcWithPayload('', '', '', "dummy_token", `namespaced_shares/${namespaceId}/height/${height}`, "GET")
     return await processData(data);
 }

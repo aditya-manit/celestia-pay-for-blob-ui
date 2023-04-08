@@ -5,12 +5,12 @@ async function processData(data) {
 }
 
 export async function submitPfb(namespaceId, textData) {
-    const requestData = {
+    const requestPayload = {
         namespace_id: namespaceId,
         data: textData,
         "gas_limit": 80000,
         "fee": 2000
     }
-    const data = await CallRpcWithPayload(requestData, "dummy_token", 'submit_pfb', "POST" )
+    const data = await CallRpcWithPayload('','', requestPayload, "dummy_token", 'submit_pfb', "POST" )
     return await processData(data);
 }
