@@ -1,4 +1,4 @@
-
+import './css/style-json.css';
 
 export async function jsonToHtml(json) {
     if (typeof json === 'string') {

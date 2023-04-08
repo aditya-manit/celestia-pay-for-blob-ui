@@ -2,13 +2,16 @@ require('dotenv').config();
 
 export async function CallRpcWithPayload(baseUrlToBeUsed, portToBeUsed, requestPayload, token, endpoint, method) {
 
-    let baseUrl = baseUrlToBeUsed || process.env.BACKEND_BASE_URL
-    const port = portToBeUsed || process.env.BACKEND_PORT
+
+    let baseUrl = baseUrlToBeUsed || process.env.REACT_APP_BACKEND_BASE_URL
+    const port = portToBeUsed || process.env.REACT_APP_BACKEND_PORT
+
 
     if (!baseUrl.startsWith("http")) {
         baseUrl = "http://" + baseUrl;
     }
 
+    console.log(`Calling ${baseUrl}`)
     const url = `http://localhost:3000/?targetApi=${encodeURIComponent(`${baseUrl}:${port}/${endpoint}`)}`;
 
     console.log(`Calling ${url}`)
