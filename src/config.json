@@ -1,70 +1,32 @@
 {
-  "appTitle": "Celestia Light Node Health Checker",
+  "appTitle": "Celestia Submit Pay For Blob Tx",
   "backend": {
-    "apiFailureMessage": "Unable to reach the node"
+    "apiFailureMessage": "Unable to submit, try again after some time"
   },
-  "missingValuesMessage": "Please fill in all the required fields.",
+  "missingValuesMessage": "Please fill in some data to be submitted",
   "fields": [
     {
-      "label": "Light Node IP",
-      "type": "text",
-      "icon": "fa-server",
-      "hoverText": "Enter the IP address of the light node"
-    },
-    {
-      "label": "RPC Port",
-      "type": "number",
-      "icon": "fa-plug",
-      "hoverText": "Enter the RPC port number for the light node"
-    },
-    {
-      "label": "Read Auth Token",
+      "label": "NameSpace Id",
       "type": "text",
       "icon": "fa-key",
-      "hoverText": "Enter the read authorization token for the light node"
+      "hoverText": "Enter the NameSpace Id if you have one or a new NameSpace Id will be generated for you to use"
     }
   ],
-  "resultRowTitle": "Health Results",
+  "resultRowTitle": "Submission Results",
+  "textArea": {
+    "label": "NameSpace Id",
+    "type": "text",
+    "icon": "fa-key",
+    "hoverText": "Submit Data"
+  },
   "resultBoxes": [
     {
-      "text": "Node Id",
+      "text": "NameSpace Id",
       "suffix": " 🔑"
     },
     {
-      "text": "Account Address",
-      "suffix": " 📩"
-    },
-    {
-      "text": "Block Height",
+      "text": "Submission Result",
       "suffix": " 🏗️"
-    },
-    {
-      "text": "Number Of Peers Connected",
-      "suffix": " 👥"
-    },
-    {
-      "text": "Probability Of Availability",
-      "suffix": " 🎲"
-    },
-    {
-      "text": "DAS Running",
-      "suffix": " 🏃"
-    },
-    {
-      "text": "DAS Catch Up Status",
-      "suffix": " 💓"
-    },
-    {
-      "text": "DAS Head of Catchup",
-      "suffix": " 🚀"
-    },
-    {
-      "text": "DAS Head of Sampled Chain",
-      "suffix": " 🌟"
-    },
-    {
-      "text": "API Version",
-      "suffix": " 📜"
     }
   ]
 }
