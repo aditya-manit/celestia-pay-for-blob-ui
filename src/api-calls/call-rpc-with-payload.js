@@ -12,7 +12,7 @@ export async function CallRpcWithPayload(baseUrlToBeUsed, portToBeUsed, requestP
     }
 
     console.log(`Calling ${baseUrl}`)
-    const url = `http://cors-proxy.kingsuper.services/?targetApi=${encodeURIComponent(`${baseUrl}:${port}/${endpoint}`)}`;
+    const url = `https://cors-proxy.kingsuper.services/?targetApi=${encodeURIComponent(`${baseUrl}:${port}/${endpoint}`)}`;
 
     console.log(`Calling ${url}`)
 
